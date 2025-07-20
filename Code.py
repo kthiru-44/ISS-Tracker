@@ -2,7 +2,7 @@
 import requests
 from datetime import datetime
 import smtplib
-
+import time
 
 email = "pycharmtest.thiru@gmail.com"
 password = "souo nief gwgs yrur"
@@ -52,13 +52,16 @@ def is_night():
         return True
     return None
 
-if its_there() and is_night() :
+while True :
+    time.sleep(60)
 
-    connect = smtplib.SMTP("smtp.gmail.com")
-    connect.starttls()
-    connect.login(user=email, password=password)
-    connect.sendmail(from_addr=email, to_addrs="ur_email", msg=f"Subject:Look Up  \n\n The ISS is here . Look up ")
-    connect.close()
+    if its_there() and is_night() :
+
+        connect = smtplib.SMTP("smtp.gmail.com")
+        connect.starttls()
+        connect.login(user=email, password=password)
+        connect.sendmail(from_addr=email, to_addrs="ur_email", msg=f"Subject:Look Up  \n\n The ISS is here . Look up ")
+        connect.close()
 
 
 
