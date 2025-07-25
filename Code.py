@@ -8,8 +8,8 @@ email = "pycharmtest.thiru@gmail.com"
 password = "souo nief gwgs yrur"
 
 
-MY_LAT = 12.916542
-MY_LNG = 77.651955
+MY_LAT = 
+MY_LNG = 
 
 def its_there():
 
