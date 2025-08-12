@@ -4,8 +4,8 @@ from datetime import datetime
 import smtplib
 import time
 
-email = "pycharmtest.thiru@gmail.com"
-password = "souo nief gwgs yrur"
+email = ""
+password = ""
 
 
 MY_LAT = 
@@ -62,6 +62,7 @@ while True :
         connect.login(user=email, password=password)
         connect.sendmail(from_addr=email, to_addrs="ur_email", msg=f"Subject:Look Up  \n\n The ISS is here . Look up ")
         connect.close()
+
 
 
 
